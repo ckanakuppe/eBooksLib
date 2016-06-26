@@ -1,0 +1,21 @@
+table tr td{
+  width: 60px;
+  height: 60px;
+  border: solid #000 2px;
+  padding:0;
+}
+
+.num, .alpha{
+	border: 0;
+	background: #fff!important;
+}
+
+.num span, .alpha span{
+	margin:0 50%;
+}
+table tr:nth-child(odd) td:nth-child(even) {
+  background: #000;
+}
+table tr:nth-child(even) td:nth-child(odd) {
+  background: #000;
+}	
