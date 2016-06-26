@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+	<head>
+	  <title>Blank Chess board</title>
+	  <link rel="stylesheet" type="text/css" href="myApp.css">
+	</head>
+	<body>
+	
+  	<table id="table-info">
+ 			 <tr>
+	<td data-info="a8"></td>
+        <td data-info="b8"></td>
+        <td data-info="c8"></td>
+        <td data-info="d8"></td>
+        <td data-info="e8"></td>
+        <td data-info="f8"></td>
+        <td data-info="g8"></td>
+        <td data-info="h8"></td>
+        <td class="num"><span>8</span></td>
+        
+    </tr>
+        <tr>
+        <td data-info="a7"></td>
+        <td data-info="b7"></td>
+        <td data-info="c7"></td>
+        <td data-info="d7"></td>
+        <td data-info="e7"></td>
+        <td data-info="f7"></td>
+        <td data-info="g7"></td>
+        <td data-info="h7"></td>
+        <td class="num"><span>7</span></td>
+
+    </tr>
+        <tr>
+        <td data-info="a6"></td>
+        <td data-info="b6"></td>
+        <td data-info="c6"></td>
+        <td data-info="d6"></td>
+        <td data-info="e6"></td>
+        <td data-info="f6"></td>
+        <td data-info="g6"></td>
+        <td data-info="h6"></td>
+        <td class="num"><span>6</span></td>
+
+    </tr>
+        <tr>
+        <td data-info="a5"></td>
+        <td data-info="b5"></td>
+        <td data-info="c5"></td>
+        <td data-info="d5"></td>
+        <td data-info="e5"></td>
+        <td data-info="f5"></td>
+        <td data-info="g5"></td>
+        <td data-info="h5"></td>
+        <td class="num"><span>5</span></td>
+
+    </tr>
+        <tr>
+        <td data-info="a4"></td>
+        <td data-info="b4"></td>
+        <td data-info="c4"></td>
+        <td data-info="d4"></td>
+        <td data-info="e4"></td>
+        <td data-info="f4"></td>
+        <td data-info="g4"></td>
+        <td data-info="h4"></td>
+        <td class="num"><span>4</span></td>
+
+    </tr>
+        <tr>
+        <td data-info="a3"></td>
+        <td data-info="b3"></td>
+        <td data-info="c3"></td>
+        <td data-info="d3"></td>
+        <td data-info="e3"></td>
+        <td data-info="f3"></td>
+        <td data-info="g3"></td>
+        <td data-info="h3"></td>
+                <td class="num"><span>3</span></td>
+
+    </tr>
+        <tr>
+        <td data-info="a2"></td>
+        <td data-info="b2"></td>
+        <td data-info="c2"></td>
+        <td data-info="d2"></td>
+        <td data-info="e2"></td>
+        <td data-info="f2"></td>
+        <td data-info="g2"></td>
+        <td data-info="h2"></td>
+        <td class="num"><span>2</span></td>
+
+    </tr>
+     <tr>
+        <td data-info="a1"></td>
+        <td data-info="b1"></td>
+        <td data-info="c1"></td>
+        <td data-info="d1"></td>
+        <td data-info="e1"></td>
+        <td data-info="f1"></td>
+        <td data-info="g1"></td>
+        <td data-info="h1"></td>
+        <td class="num"><span>1</span></td>
+    </tr>
+    <tr>
+        <td class="alpha"><span>a</span></td>
+        <td class="alpha"><span>b</span></td>
+        <td class="alpha"><span>c</span></td>
+        <td class="alpha"><span>d</span></td>
+        <td class="alpha"><span>e</span></td>
+        <td class="alpha"><span>f</span></td>
+        <td class="alpha"><span>g</span></td>
+        <td class="alpha"><span>h</span></td>
+    </tr>
+	
+</table>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>                  
+    <script>
+			$(document).ready(function(){
+				$("#table-info tr td").off("click").on("click", function(){
+					var temp = $(this).data("info");
+					alert(temp);
+				});
+			});
+		</script>
+	</body>
+
+
+</html>
